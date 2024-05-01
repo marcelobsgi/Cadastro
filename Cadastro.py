@@ -24,19 +24,19 @@ def main(page):
     }
 
     def salvar(e):
-        dict_values['beneficiario'] = contratante.value
-        dict_values['carteira'] = medida_judicial.value
-        dict_values['uf'] = outra_parte.value
-        dict_values['medicamento_1'] = prolabore.value
-        dict_values['cod_tuss_1'] = exito.value
-        dict_values['qtd_1'] = foro.value
-        dict_values['medicamento_2'] = data.value 
-        dict_values['cod_tuss_2'] = data.value
-        dict_values['qtd_2'] = data.value
-        dict_values['nome_medico'] = data.value
-        dict_values['crm'] = data.value
-        dict_values['uf_crm'] = data.value
-        dict_values['data_prescricao'] = data.value
+        dict_values['beneficiario'] = beneficiario.value
+        dict_values['carteira'] = carteira.value
+        dict_values['uf'] = UF.value
+        dict_values['medicamento_1'] = medicamento_1.value
+        dict_values['cod tuss 1'] = cod_tuss_1.value
+        dict_values['qtd_1'] = qtd_1.value
+        dict_values['medicamento_2'] = medicamento_2.value 
+        dict_values['cod_tuss_2'] = cod_tuss_2.value
+        dict_values['qtd_2'] = qtd_2.value
+        dict_values['nome_medico'] = nome_medico.value
+        dict_values['crm'] = crm.value
+        dict_values['uf_crm'] = uf_crm.value
+        dict_values['data_prescricao'] = data_prescricao.value
 
 
         for val in dict_values.values():
@@ -77,7 +77,7 @@ def main(page):
     cod_tuss_1 = TextField(label='TUSS 1')
     qtd_1 = TextField(label='Quantidade 1')
     medicamento_2 = TextField(label='Medicamento 2')
-    cod_tuss_2 = TextField(label='Quantidade 2')
+    cod_tuss_2 = TextField(label='TUSS 2')
     qtd_2 = TextField(label='Quantidade 2')
     nome_medico = TextField(label='Nome do Médico')
     crm = TextField(label='CRM')
